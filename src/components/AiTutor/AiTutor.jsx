@@ -41,14 +41,14 @@ Focus your answers on improving their weak areas based on the data above. Be mot
     setIsLoading(true);
 
     try {
-      const response = await fetch('https://api.minimax.chat/v1/text/chatcompletion_v2', {
+      const response = await fetch('https://api.minimax.io/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify({
-          model: 'abab6.5s-chat', // We use standard Minimax chat model by default, but the key is tied to their m2.7 plan
+          model: 'MiniMax-M2.7', // Using the Token Plan specific model
           messages: [
             { role: 'system', name: 'system', content: generateSystemPrompt() },
             ...messages.map(m => ({ role: m.role, name: m.role === 'user' ? 'user' : 'assistant', content: m.content })),

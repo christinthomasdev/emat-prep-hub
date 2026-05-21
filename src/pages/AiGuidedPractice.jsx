@@ -67,14 +67,14 @@ Format:
 }`;
 
     try {
-      const response = await fetch('https://api.minimax.chat/v1/text/chatcompletion_v2', {
+      const response = await fetch('https://api.minimax.io/v1/chat/completions', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
           'Authorization': `Bearer ${apiKey}`
         },
         body: JSON.stringify({
-          model: 'abab6.5s-chat',
+          model: 'MiniMax-M2.7',
           messages: [
             { role: 'user', name: 'user', content: prompt }
           ]
