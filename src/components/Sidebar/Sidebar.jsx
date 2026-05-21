@@ -30,6 +30,7 @@ export default function Sidebar({ studyLogs, mockScores, errors, piDrafts, onImp
   const navItems = [
     { path: '/', icon: 'fas fa-th-large', label: 'Dashboard' },
     { path: '/simulator', icon: 'fas fa-stopwatch', label: 'Exam Simulator' },
+    { path: '/guided-practice', icon: 'fas fa-robot', label: 'AI Guided Practice' },
     { path: '/tracker', icon: 'fas fa-tasks', label: 'Study Tracker' },
     { path: '/errors', icon: 'fas fa-exclamation-triangle', label: 'Error Log' },
     { path: '/pi', icon: 'fas fa-microphone', label: 'PI Corner' },

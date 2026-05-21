@@ -9,6 +9,7 @@ import Tracker from './pages/Tracker';
 import ErrorLog from './pages/ErrorLog';
 import PiCorner from './pages/PiCorner';
 import CheatSheets from './pages/CheatSheets';
+import AiGuidedPractice from './pages/AiGuidedPractice';
 
 function DashboardPage() {
   const { studyLogs, mockScores, errors } = useOutletContext();
@@ -46,6 +47,7 @@ createRoot(document.getElementById('root')).render(
           <Route path="errors" element={<ErrorLogPage />} />
           <Route path="pi" element={<PiCornerPage />} />
           <Route path="notes" element={<CheatSheets />} />
+          <Route path="guided-practice" element={<AiGuidedPractice />} />
         </Route>
       </Routes>
     </BrowserRouter>
