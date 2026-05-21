@@ -1,0 +1,15 @@
+.panel {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md); overflow: hidden; margin-bottom: 16px;
+}
+.header {
+  padding: 16px 20px; display: flex; justify-content: space-between;
+  align-items: center; cursor: pointer; background: var(--bg-secondary);
+  transition: var(--transition-smooth);
+}
+.header:hover { background: var(--glass-bg-hover); }
+.header h3 { font-size: 1.05rem; font-weight: 600; color: var(--text-primary); }
+.content { padding: 20px; font-size: 0.95rem; line-height: 1.6; border-top: 1px solid var(--glass-border); }
+.content ul { padding-left: 20px; margin-bottom: 16px; }
+.content li { margin-bottom: 8px; color: var(--text-secondary); }
+.content strong { color: var(--text-primary); }

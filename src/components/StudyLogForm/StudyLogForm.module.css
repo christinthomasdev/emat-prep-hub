@@ -1,0 +1,14 @@
+.panel {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg); padding: 24px; height: 100%;
+}
+.panelHeader { display: flex; justify-content: space-between; align-items: center; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--glass-border); }
+.panelTitle { font-size: 1.15rem; font-weight: 600; }
+.formGroup { margin-bottom: 16px; }
+.formGroup label { display: block; font-size: 0.85rem; font-weight: 600; color: var(--text-secondary); margin-bottom: 6px; }
+.formControl {
+  width: 100%; background: var(--bg-tertiary); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-md); padding: 10px 14px; color: var(--text-primary);
+  font-family: var(--font-body); font-size: 0.9rem; transition: var(--transition-smooth);
+}
+.formControl:focus { outline: none; border-color: var(--accent-blue); box-shadow: 0 0 10px var(--accent-blue-glow); }

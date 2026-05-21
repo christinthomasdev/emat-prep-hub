@@ -1,0 +1,7 @@
+.badge {
+  display: inline-block; padding: 3px 8px; border-radius: 4px;
+  font-size: 0.72rem; font-weight: 600; text-transform: uppercase;
+}
+.badgeQa { composes: badge; background: rgba(59, 130, 246, 0.15); color: var(--accent-blue); }
+.badgeDilr { composes: badge; background: rgba(6, 182, 212, 0.15); color: var(--accent-cyan); }
+.badgeVa { composes: badge; background: rgba(168, 85, 247, 0.15); color: hsl(270, 85%, 70%); }

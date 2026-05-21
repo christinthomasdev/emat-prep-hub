@@ -1,0 +1,10 @@
+.header { margin-bottom: 32px; }
+.title { font-size: 2.2rem; font-weight: 700; margin-bottom: 8px; }
+.subtitle { color: var(--text-secondary); font-size: 1.05rem; }
+.statsGrid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; margin-bottom: 32px; }
+.layoutGrid { display: grid; grid-template-columns: 2fr 1fr; gap: 24px; }
+.panel {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg); padding: 24px; height: 100%;
+}
+.panel h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: 20px; padding-bottom: 12px; border-bottom: 1px solid var(--glass-border); }

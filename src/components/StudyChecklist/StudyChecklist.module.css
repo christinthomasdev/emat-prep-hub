@@ -1,0 +1,19 @@
+.container { display: flex; flex-direction: column; gap: 16px; }
+.weekCard {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg); padding: 20px;
+}
+.weekTitle {
+  font-size: 1rem; font-weight: 600; color: var(--accent-cyan);
+  margin-bottom: 12px; text-transform: uppercase; letter-spacing: 0.05em;
+  border-bottom: 1px solid var(--glass-border); padding-bottom: 8px;
+}
+.group { display: flex; flex-direction: column; gap: 10px; }
+.checkLabel {
+  display: flex; align-items: flex-start; gap: 12px;
+  font-size: 0.88rem; color: var(--text-secondary); cursor: pointer;
+  transition: var(--transition-smooth);
+}
+.checkLabel:hover { color: var(--text-primary); }
+.checkLabel input { margin-top: 4px; accent-color: var(--accent-blue); cursor: pointer; }
+.checked { text-decoration: line-through; color: var(--text-muted); }

@@ -1,0 +1,33 @@
+.panel {
+  background: var(--glass-bg); border: 1px solid var(--glass-border);
+  border-radius: var(--radius-lg); padding: 20px;
+  display: flex; flex-direction: column;
+}
+.title { font-size: 1rem; font-weight: 600; margin-bottom: 16px; padding-bottom: 8px; border-bottom: 1px solid var(--glass-border); }
+.grid {
+  display: grid; grid-template-columns: repeat(5, 1fr); gap: 8px;
+  overflow-y: auto; max-height: 320px; margin-bottom: 20px;
+}
+.node {
+  width: 100%; aspect-ratio: 1; background: var(--bg-tertiary);
+  border: 1px solid var(--glass-border); border-radius: var(--radius-sm);
+  display: flex; align-items: center; justify-content: center;
+  font-size: 0.8rem; font-weight: 600; color: var(--text-secondary);
+  cursor: pointer; position: relative; transition: var(--transition-smooth);
+}
+.node:hover { background: var(--glass-bg-hover); border-color: var(--text-secondary); }
+.nodeActive { border-color: var(--accent-blue); box-shadow: 0 0 8px var(--accent-blue-glow); }
+.nodeAnswered { background: var(--accent-blue); color: var(--bg-primary); border-color: var(--accent-blue); }
+.nodeFlagged::after {
+  content: ''; position: absolute; top: 2px; right: 2px;
+  width: 6px; height: 6px; border-radius: 50%; background: var(--accent-yellow);
+}
+.legends { margin-top: auto; display: flex; flex-direction: column; gap: 8px; font-size: 0.8rem; padding-top: 12px; border-top: 1px solid var(--glass-border); }
+.legendItem { display: flex; align-items: center; gap: 8px; color: var(--text-secondary); }
+.legendColor { width: 12px; height: 12px; border-radius: 3px; background: var(--bg-tertiary); border: 1px solid var(--glass-border); }
+.legendAnswered { background: var(--accent-blue); }
+.legendFlagged { position: relative; }
+.legendFlagged::after {
+  content: ''; position: absolute; top: 1px; right: 1px;
+  width: 4px; height: 4px; border-radius: 50%; background: var(--accent-yellow);
+}
